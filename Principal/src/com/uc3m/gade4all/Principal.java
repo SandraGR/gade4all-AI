@@ -55,7 +55,7 @@ public class Principal extends Activity {
 	Vector<Enemy> enemies = new Vector<Enemy>();
 	Enemy currentEnemy;
     int map_width = 8;
-    int map_height = 8;
+    int map_height = 8; 
     Vector<Cell> specialCell = new Vector<Cell>(); 
 	Vector<Obstacle> obstacles = new Vector<Obstacle>();
 	Tablero board;
