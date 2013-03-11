@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <CheckedTextView
+        android:id="@+id/ExpY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/valorY"
+        android:layout_alignBottom="@+id/valorY"
+        android:layout_alignParentLeft="true"
+        android:text="Introduzca Y" />
+
+    <EditText
+        android:id="@+id/valorY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:hint="y" />
+
+    <CheckedTextView
+        android:id="@+id/ExpX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/valorY"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="34dp"
+        android:text="Introduzca X" />
+
+    <EditText
+        android:id="@+id/valorX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ExpX"
+        android:layout_alignBottom="@+id/ExpX"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="x" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckedTextView
+        android:id="@+id/mostrador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/valorX"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/botonNext"
+        android:layout_marginTop="74dp"
+        android:text="........" />
+
+    <Button
+        android:id="@+id/botonAtacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:onClick="moverPersonaje"
+        android:text="Atacar" />
+
+    <Button
+        android:id="@+id/botonMover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ExpY"
+        android:onClick="moverPersonaje"
+        android:text="Mover" />
+
+    <Button
+        android:id="@+id/botonNextPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="nextPersonaje"
+        android:text="next player" />
+
+    <Button
+        android:id="@+id/botonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/botonAtacar"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="37dp"
+        android:onClick="jugarSiguiente"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/botonSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mostrador"
+        android:layout_toLeftOf="@+id/valorX"
+        android:onClick="fin"
+        android:text="Salir" />
+
+</RelativeLayout>
