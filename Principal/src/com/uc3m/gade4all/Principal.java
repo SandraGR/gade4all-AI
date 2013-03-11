@@ -43,7 +43,7 @@ import android.widget.EditText;
  *  (set parameters in method test() ).
  *  
  */
-
+ 
 /**
  * Main class. Specific game application
  * 
