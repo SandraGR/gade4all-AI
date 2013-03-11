@@ -28,7 +28,7 @@ decision. This class also implements a first approach to test the AI module (set
 Instructions to execute:
 
 1)	Open the project in eclipse.
-2)	Run as an Android application
+2)	Run as an Android application.
 3)	Play from the screen of your android mobile and the shell of the computer.
 
 
